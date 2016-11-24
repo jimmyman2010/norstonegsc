@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Klinic Slab Light";
+    src: url("KlinicSlabLight.eot"); /* IE9 */
+    src: url("KlinicSlabLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("KlinicSlabLight.woff") format("woff"), /* chrome, firefox */
+    url("KlinicSlabLight.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("KlinicSlabLight.svg#Klinic Slab Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Klinic Slab Book";
+    src: url("KlinicSlabBook.eot"); /* IE9 */
+    src: url("KlinicSlabBook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("KlinicSlabBook.woff") format("woff"), /* chrome, firefox */
+    url("KlinicSlabBook.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("KlinicSlabBook.svg#Klinic Slab Book") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
