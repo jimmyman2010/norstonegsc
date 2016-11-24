@@ -1,0 +1,273 @@
+
+.site-wrapper{
+    padding-top: 119px;
+    @include tablet{
+        padding-top: 139px;
+    }
+}
+
+.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8999;
+    background-color: white;
+    width: 100%;
+
+    padding-top: 10px;
+    border-bottom: 5px solid #06b11a;
+    @include transition(padding 0.3s linear, border 0.3s linear);
+    @include tablet{
+        padding-top: 15px;
+        border-bottom-width: 8px;
+    }
+
+    .site-header--inner{
+        @include transition(margin 0.3s linear);
+        .container{
+            padding-left: 0;
+            padding-right: 0;
+            @include tablet{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .logo{
+        float: left;
+        margin: 0 15px 10px;
+        width: 60px;
+        @include tablet {
+            margin: 0 0 15px;
+            width: 166px;
+        }
+    }
+
+    .site-menu-wrapper{
+        float: right;
+        @include transition(padding 0.3s linear);
+        @include tablet{
+            width: auto;
+            padding-top: 30px;
+        }
+    }
+
+    .site-menu{
+        position: absolute;
+        left: 0;
+        top: calc(100% + 5px);
+        width: 100%;
+        background-color: white;
+        @include transition(height 0.3s linear, opacity 0.3s linear);
+        @include tablet{
+            position: static;
+            float: left;
+            width: auto;
+
+            height: auto !important;
+            overflow: visible !important;
+            opacity: 1 !important;
+        }
+
+        .main-menu-wrap{
+        }
+
+        .main-menu{
+            @include clearfix;
+            @include tablet{
+                padding-right: 10px;
+                border-right: 2px solid #dae0e4;
+            }
+
+            > .menu-item{
+                float: left;
+                font-weight: 500;
+                position: relative;
+                padding: 0 10px;
+                > a{
+                    position: relative;
+                    display: inline-block;
+                    color: black;
+                    padding: 10px 5px;
+                    @include tablet {
+                        padding: 0 10px;
+                    }
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+
+                &:hover {
+                    .sub-menu {
+                        display: block;
+                    }
+                }
+                .sub-menu{
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+
+                    font-size: 15px;
+                    display: none;
+                    background-color: white;
+                    @include box-shadow(0 6px 13px -5px rgba(0, 0, 0, 0.5));
+                    z-index: 1000;
+                    width: 250px;
+                    @include tablet{
+                        padding-top: 25px;
+                    }
+
+                    li{
+                        border-top: 1px solid #f7f7f7;
+                        &:first-child{
+                            border-top: none;
+                        }
+                        &:hover, &:hover + li{
+                            border-top-color: transparent;
+                        }
+                    }
+                    a{
+                        display: block;
+                        padding: 12px 16px;
+                        color: black;
+                        @include desktop {
+                            padding: 17px 20px;
+                            &:hover {
+                                background-color: #e7f5f5;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .sub-menu--blue-chill a{
+                    color: $color-blue-chill;
+                }
+                .sub-menu--green a{
+                    color: $color-green;
+                }
+                .sub-menu--orange a{
+                    color: $color-orange;
+                }
+            }
+            .menu-item-has-children{
+                > a{
+                    padding-right: 20px;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        margin-top: -3px;
+
+                        width: 0;
+                        height: 0;
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+
+                        border-top: 6px solid #263238;
+                    }
+                }
+            }
+
+            .menu--blue-chill > a{
+                &:hover, span:last-child{
+                    color: $color-blue-chill;
+                }
+            }
+            .menu--green > a{
+                &:hover, span:last-child{
+                    color: $color-green;
+                }
+            }
+            .menu--orange > a{
+                &:hover, span:last-child{
+                    color: $color-orange;
+                }
+            }
+        }
+
+    }
+
+    .submenu{
+        display: none;
+        @include box-shadow(0 10px 20px -10px rgba(0, 0, 0, 0.2));
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 8000;
+        background: white;
+    }
+
+    .slogan{
+        display: none;
+        @include desktop{
+            display: block;
+        }
+        float: left;
+        padding: 5px 15px 0;
+        border-right: 2px solid #dae0e4;
+        .connect{
+            font-family: $font-light;
+            text-align: right;
+            font-size: 14px;
+            color: #5f7080;
+            .sn{
+                line-height: 32px;
+                a{
+                    font-size: 20px;
+                    display: inline-block;
+                    margin: 0 10px;
+                    color: #33485d;
+                }
+            }
+        }
+    }
+
+    .right-rail-menu{
+        float: left;
+        padding: 11px 25px;
+        .site-rail-menu--toggle{
+            display: block;
+            width: 26px;
+            span{
+                display: block;
+                height: 3px;
+                @include border-radius(1px);
+                background-color: #263238;
+                margin-top: 4px;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+.site-scrolling{
+    .site-header{
+        border-bottom-width: 5px;
+    }
+    .logo{
+        @include tablet {
+            width: 80px;
+        }
+    }
+    .site-menu-wrapper{
+        @include tablet{
+            padding-top: 5px;
+        }
+    }
+    .site-menu {
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+}

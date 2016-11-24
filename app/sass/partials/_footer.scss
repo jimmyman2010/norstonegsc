@@ -1,0 +1,128 @@
+.site-footer{
+
+    .personal-network{
+        background-color: #059816;
+        font-family: $font-open;
+        color: #fff;
+        font-size: 15px;
+        a{
+            color: white;
+        }
+
+        .personal-column{
+            padding: 20px 15px;
+            @include tablet{
+                float: left;
+                width: 50%;
+            }
+            @include desktop{
+                padding: 35px 30px;
+            }
+        }
+
+        h3{
+            font-size: 23px;
+            font-weight: 600;
+            margin: 0 0 15px;
+        }
+        .menu{
+            list-style: disc;
+            padding-left: 20px;
+            @include clearfix;
+            .menu-item{
+                margin: 5px 0;
+                &:empty{
+                    list-style: none;
+                }
+                &:nth-child(2n+1){
+                    clear: left;
+                }
+                @include desktop{
+                    float: left;
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .footer--info{
+        background-color: #fff;
+        color: #31363c;
+
+
+    }
+
+    .information{
+        font-size: 15px;
+        .contact-info{
+            padding: 15px;
+            @include tablet{
+                float: left;
+                width: 33.33%;
+
+            }
+            @include desktop {
+                padding: 30px;
+            }
+        }
+        h3{
+            font-size: 23px;
+            margin: 0 0 20px;
+            color: #059816;
+        }
+        p{
+            margin: 0 0 10px;
+        }
+        .phone a{
+            color: #263238;
+        }
+        .networks {
+            margin-bottom: 20px;
+            a {
+                font-size: 24px;
+                display: inline-block;
+                margin-left: 30px;
+                color: #059816;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        font-family: $font-open;
+        font-size: 13px;
+        background-color: #263238;
+        color: white;
+        text-align: center;
+        .back-to-top{
+            display: inline-block;
+            padding: 20px 15px 0;
+            color: white;
+            i{
+                font-size: 1.5em;
+                margin-left: 10px;
+                margin-top: -2px;
+                float: right;
+            }
+            @include tablet{
+                float: right;
+                padding: 20px 15px;
+            }
+            @include desktop{
+                padding: 25px 20px;
+            }
+        }
+        p{
+            padding: 20px 15px 25px;
+            @include tablet{
+                float: left;
+                padding: 20px 15px;
+            }
+            @include desktop{
+                padding: 25px 30px;
+            }
+        }
+    }
+}
