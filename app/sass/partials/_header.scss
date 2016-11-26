@@ -140,6 +140,7 @@
             @include desktop{
                 background-color: transparent;
                 padding-right: 10px;
+                font-size: 16px;
                 display: block;
             }
 
@@ -408,7 +409,6 @@
         .site-header {
             padding-top: 18px;
             .site-menu .main-menu {
-                font-size: 16px;
                 > .menu-item {
                     padding-top: 20px;
                     padding-bottom: 0;
