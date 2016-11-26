@@ -19,7 +19,7 @@
 			<div class="copyright">
 				<div class="container clearfix">
 					<a href="#body" class="back-to-top anchor">Go To Top <i class="fa fa-angle-up"></i></a>
-					<p>&copy; 2016 ABILITY English. All Rights Reserved.</p>
+					<p>&copy; 2016 Norstone. All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>
