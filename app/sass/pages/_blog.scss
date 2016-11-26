@@ -206,12 +206,12 @@
 .body{
     @include clearfix;
     font-size: 26px;
-    line-height: 1.5;
+    line-height: 1;
     color: #2f363c;
     > *{
         margin: 0 0 15px;
         &:last-child{
-            margin: 0;
+            margin-bottom: 0;
         }
     }
     a{
@@ -299,6 +299,7 @@
         }
         &.mini {
             font-size: 22px;
+            line-height: 1.1;
         }
     }
 }
