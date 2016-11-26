@@ -13,19 +13,20 @@
 //@import "global/retina-background-image";
 
 body{
-    font-family: $font-roboto;
+    font-family: $font-regular;
     font-size: 16px;
     line-height: 1.2;
     color: #263238;
     margin: 0;
     padding: 0;
+    letter-spacing: 0.02em;
     @include tablet{
         font-size: 18px;
     }
 }
 
 h1, h2, h3, h4, h5, h6, b, strong{
-    font-weight: 500;
+    //font-weight: 500;
 }
 
 .site-container{
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5, h6, b, strong{
 @import "partials/header";
 @import "partials/footer";
 @import "partials/form";
-@import "partials/history";
+//@import "partials/history";
 
 //@import "animate";
 
