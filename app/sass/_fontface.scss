@@ -45,3 +45,15 @@ $url: "../fonts";
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
+@font-face {
+    font-family: "Raleway Light";
+    src: url("#{$url}/Raleway-Light.eot"); /* IE9 */
+    src: url("#{$url}/Raleway-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("#{$url}/Raleway-Light.woff") format("woff"), /* chrome, firefox */
+    url("#{$url}/Raleway-Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("#{$url}/Raleway-Light.svg#Raleway Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

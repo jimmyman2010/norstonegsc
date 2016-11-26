@@ -357,6 +357,7 @@
     .cell--form{
 
         .widget-title{
+            font-family: $font-raleway;
             font-size: 42px;
             line-height: 1.1;
             margin-bottom: 0;
@@ -367,6 +368,7 @@
             }
         }
         .sub-title{
+            font-family: $font-raleway;
             font-size: 20px;
             color: #5e6977;
             @include tablet{
@@ -381,6 +383,7 @@
                 text-decoration: none;
                 display: inline-block;
                 position: relative;
+                color: #009688;
                 &:before{
                     content:'';
                     display: block;
@@ -394,7 +397,7 @@
                 }
             }
             @include tablet{
-                font-size: 22px;
+                font-size: 26px;
             }
         }
         input, select, textarea{
@@ -406,7 +409,7 @@
             line-height: 1;
             font-size: 18px;
             outline: none;
-            font-family: $font-roboto !important;
+            font-family: $font-regular !important;
 
             position: relative;
             z-index: 2;
@@ -428,8 +431,8 @@
         }
 
         input[type="submit"]{
-            @include border-radius(50px);
-            background-color: $color-green;
+            @include border-radius(6px);
+            background-color: #009688;
             border-color: transparent;
             color: white;
         }
@@ -437,14 +440,20 @@
         .input-group{
             position: relative;
             margin-top: 22px;
+            font-family: $font-raleway;
+            font-size: 18px;
+            @include tablet{
+                font-size: 20px;
+            }
             label .label{
                 color: #86939e;
                 position: absolute;
-                left: 18px;
-                top: 10px;
+                left: 14px;
+                top: 7px;
                 z-index: 1;
                 @include tablet{
-                    top: 14px;
+                    top: 12px;
+                    left: 18px;
                 }
             }
 
@@ -567,7 +576,16 @@
     }
 
     .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper{
-        @extend .body
+        @extend .body;
+        font-family: $font-light;
+        
+        h1,h2,h3,h4,h5,h6{
+            font-family: $font-raleway-light !important;
+        }
+        p{
+            margin: 0 auto 15px;
+            max-width: 666px;
+        }
     }
 
 

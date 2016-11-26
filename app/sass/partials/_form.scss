@@ -152,19 +152,19 @@
 }
 .button{
     display: inline-block;
-    font-family: $font-roboto;
+    font-family: $font-medium;
     outline: none;
-    color: #fff !important;
+    color: #009688 !important;
     font-size: 16px;
     padding: 8px 25px;
     cursor: pointer;
     text-align: center;
     border: none;
-    @include border-radius(50px);
+    @include border-radius(6px);
     @include transition(color 0.3s, background-color 0.3s, border-color 0.3s);
     text-decoration: none !important;
     min-width: 145px;
-    background-color: $color-green;
+    background-color: rgba(255,255,255,0.6);
     &:hover{
         @include opacity(0.9);
     }
@@ -175,24 +175,24 @@
 }
 
 .button--angle-left{
-    &:before{
+    &:after{
         content:'\f104';
         font: $font-awesome;
         font-size: 1.1em;
-        margin-right: 7px;
+        margin-left: 7px;
         @include tablet {
-            margin-right: 10px;
+            margin-left: 10px;
         }
     }
 }
 .button--angle-right{
-    &:before{
+    &:after{
         content:'\f105';
         font: $font-awesome;
         font-size: 1.1em;
-        margin-right: 7px;
+        margin-left: 7px;
         @include tablet {
-            margin-right: 10px;
+            margin-left: 10px;
         }
     }
 }
