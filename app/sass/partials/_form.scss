@@ -156,7 +156,7 @@
     outline: none;
     color: #009688 !important;
     font-size: 16px;
-    padding: 8px 25px;
+    padding: 10px 25px;
     cursor: pointer;
     text-align: center;
     border: none;
@@ -164,14 +164,14 @@
     @include transition(color 0.3s, background-color 0.3s, border-color 0.3s);
     text-decoration: none !important;
     min-width: 145px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(white,0.65);
     @include text-shadow(none);
     &:hover{
         @include opacity(0.9);
     }
     @include tablet{
         font-size: 22px;
-        padding: 9px 30px;
+        padding: 14px 30px;
     }
 }
 
@@ -197,6 +197,9 @@
         }
     }
 }
+.button--gray{
+    background-color: rgba(#b2dfdb,0.5);
+}
 
 .button--instagram{
     @include linear-gradient(to right, #da26a9, #b100e3);
@@ -215,7 +218,7 @@
 
 .button--small{
     font-size: 12px;
-    padding: 7px 20px;
+    padding: 8px 20px;
 }
 
 .button--red{
@@ -223,11 +226,11 @@
 }
 
 .button--yellow{
-    background-color: #efbc00;
+    background-color: $color-yellow;
 }
 
 .button--blue{
-    background-color: #119EBC;
+    background-color: $color-blue;
 }
 
 .button--light-blue{
@@ -242,13 +245,8 @@
     background-color: #18AEB1;
 }
 
-.button--gray{
-    background-color: #eaeaea;
-    color: black !important;
-}
-
 .button--green{
-    background-color: #519721;
+    background-color: $color-green;
 }
 
 .button--light-green{

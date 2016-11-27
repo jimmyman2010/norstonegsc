@@ -142,18 +142,21 @@
         }
     }
 
-    .cell--blue-chill{
-        background-color: $color-blue-chill;
+    .cell--blue{
+        background-color: $color-blue;
         .widget-title{
             padding-top: 20px;
             color: white;
         }
         .textwidget {
             color: white;
+            font-family: $font-light;
             .button{
                 margin-top: 15px;
-                color: $color-blue-chill !important;
-                background-color: white;
+                padding: 0;
+                min-width: 0;
+                color: white !important;
+                background-color: transparent;
             }
         }
         @include tablet{
@@ -168,46 +171,34 @@
         }
         .textwidget {
             color: white;
+            font-family: $font-light;
             .button{
                 margin-top: 15px;
-                color: $color-green !important;
-                background-color: white;
+                padding: 0;
+                min-width: 0;
+                color: white !important;
+                background-color: transparent;
             }
         }
         @include tablet{
             padding-left: 20px !important;
         }
     }
-    .cell--orange{
-        background-color: $color-orange;
-        .widget-title{
-            padding-top: 20px;
-            color: $color-blue-chill;
-        }
-        .textwidget {
-            .button {
-                margin-top: 15px;
-                color: $color-orange !important;
-                background-color: white;
-            }
-        }
-        @include tablet{
-            padding-left: 20px !important;
-        }
-    }
-
-    .cell--cardinal{
-        background-color: $color-cardinal;
+    .cell--persian-green{
+        background-color: $color-persian-green;
         .widget-title{
             padding-top: 20px;
             color: white;
         }
         .textwidget {
             color: white;
+            font-family: $font-light;
             .button {
                 margin-top: 15px;
-                color: $color-cardinal !important;
-                background-color: white;
+                padding: 0;
+                min-width: 0;
+                color: white !important;
+                background-color: transparent;
             }
         }
         @include tablet{
@@ -215,36 +206,21 @@
         }
     }
 
-    .cell--jaffa{
-        background-color: $color-jaffa;
+    .cell--text-white{
+        //background-color: $color-sunglow;
         .widget-title{
             padding-top: 20px;
             color: white;
         }
         .textwidget {
             color: white;
+            font-family: $font-light;
             .button {
                 margin-top: 15px;
-                color: $color-jaffa !important;
-                background-color: white;
-            }
-        }
-        @include tablet{
-            padding-left: 20px !important;
-        }
-    }
-
-    .cell--sunglow{
-        background-color: $color-sunglow;
-        .widget-title{
-            padding-top: 20px;
-            color: $color-blue-chill;
-        }
-        .textwidget {
-            .button {
-                margin-top: 15px;
-                color: $color-sunglow !important;
-                background-color: white;
+                padding: 0;
+                min-width: 0;
+                color: white !important;
+                background-color: transparent;
             }
         }
         @include tablet{
@@ -257,16 +233,22 @@
             color: white;
         }
     }
+    .text--black{
+        .textwidget {
+            color: black;
+        }
+    }
 
     .cell--overlay-top{
-        padding: 15px 0 !important;
+        padding: 15px !important;
+        height: auto !important;
         @include tablet {
             position: absolute;
             width: 100%;
             left: 0;
             top: 0;
             background-color: rgba(255, 255, 255, 0.83);
-            padding: 30px 0 !important;
+            padding: 30px 20px !important;
             z-index: 1;
         }
     }
@@ -276,8 +258,10 @@
         left: 0;
         bottom: 0;
         z-index: 1;
+        padding: 15px !important;
+        height: auto !important;
         @include tablet{
-            padding: 30px 0 !important;
+            padding: 30px 20px !important;
         }
     }
 
@@ -452,7 +436,7 @@
                 top: 7px;
                 z-index: 1;
                 @include tablet{
-                    top: 12px;
+                    top: 15px;
                     left: 18px;
                 }
             }
@@ -512,6 +496,11 @@
 
     .cell--no-padding{
         padding: 0 !important;
+    }
+    .cell--hidden{
+        @include desktop {
+            visibility: hidden;
+        }
     }
 
     .tablepress-table-name{

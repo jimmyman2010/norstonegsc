@@ -103,10 +103,12 @@
         height: 100%;
     }
     .widget{
-        font-size: 16px;
-        margin-bottom: 25px;
+        font-size: 22px;
+        margin-bottom: 20px;
         .widget--title{
-            font-size: 25px;
+            font-family: $font-raleway;
+            font-weight: normal;
+            font-size: 30px;
             color: white;
             margin: 0 0 10px;
         }
@@ -118,27 +120,18 @@
     .widget_nav_menu{
         .menu{
             > .menu-item{
-                margin: 25px 0 0;
+                margin: 20px 0 0;
                 &:first-child{
-                    margin: 0;
+                    margin-top: 0;
                 }
                 > a {
                     display: inline-block;
-                    font-weight: 500;
-                    font-size: 25px;
+                    font-family: $font-raleway;
+                    font-size: 30px;
                     color: white;
                     margin: 0 0 10px;
                     text-decoration: none;
                 }
-            }
-            .menu--blue-chill > a{
-                color: #119b9b;
-            }
-            .menu--green > a{
-                color: #059816;
-            }
-            .menu--orange > a{
-                color: #fdba31;
             }
         }
     }

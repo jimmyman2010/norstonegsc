@@ -206,7 +206,7 @@
 .body{
     @include clearfix;
     font-size: 26px;
-    line-height: 1;
+    line-height: 1.1;
     color: #2f363c;
     > *{
         margin: 0 0 15px;
@@ -296,10 +296,11 @@
     p {
         &.hero {
             font-size: 36px;
+            line-height: 1;
         }
         &.mini {
             font-size: 22px;
-            line-height: 1.1;
+            line-height: 1.2;
         }
     }
 }
