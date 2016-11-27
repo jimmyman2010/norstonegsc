@@ -433,7 +433,7 @@
                 color: #86939e;
                 position: absolute;
                 left: 14px;
-                top: 7px;
+                top: 11px;
                 z-index: 1;
                 @include tablet{
                     top: 15px;
@@ -868,6 +868,9 @@
 
 
 .siteorigin-panels-stretch{
+    @media all and (max-width: 767px) {
+        background-image: none !important;
+    }
     .panel-grid-cell{
         margin-bottom: 0;
     }
