@@ -369,6 +369,9 @@
         .textwidget {
             color: white;
             font-family: $font-light;
+            > div{
+                color: white;
+            }
             .button {
                 margin-top: 15px;
                 padding: 0;
@@ -376,9 +379,6 @@
                 color: white !important;
                 background-color: transparent;
             }
-        }
-        @include tablet{
-            padding-left: 20px !important;
         }
     }
 
