@@ -207,7 +207,7 @@
     @include clearfix;
     font-size: 26px;
     line-height: 1.1;
-    color: #2f363c;
+    color: $color-Grey900;
     > *{
         margin: 0 0 15px;
         &:last-child{

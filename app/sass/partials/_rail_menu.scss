@@ -47,7 +47,7 @@
 }
 
 .site-rail-menu{
-    background-color: #263238;
+    background-color: $color-Grey900;
     color: white;
     padding: 60px 15px 20px 20px;
     height: 100vh;
@@ -109,7 +109,7 @@
             font-family: $font-raleway;
             font-weight: normal;
             font-size: 30px;
-            color: white;
+            color: $color-Teal700;
             margin: 0 0 10px;
         }
         li{
@@ -128,7 +128,7 @@
                     display: inline-block;
                     font-family: $font-raleway;
                     font-size: 30px;
-                    color: white;
+                    color: $color-Teal700;
                     margin: 0 0 10px;
                     text-decoration: none;
                 }

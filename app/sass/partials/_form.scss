@@ -154,7 +154,7 @@
     display: inline-block;
     font-family: $font-medium;
     outline: none;
-    color: #009688 !important;
+    color: white !important;
     //font-size: 16px;
     //padding: 10px 25px;
     font-size: 22px;
@@ -166,7 +166,7 @@
     @include transition(color 0.3s, background-color 0.3s, border-color 0.3s);
     text-decoration: none !important;
     min-width: 145px;
-    background-color: rgba(white,0.65);
+    background-color: $color-Teal700;
     @include text-shadow(none);
     &:hover{
         @include opacity(0.9);
@@ -199,13 +199,6 @@
         }
     }
 }
-.button--gray{
-    background-color: rgba(#b2dfdb,0.5);
-}
-
-.button--instagram{
-    @include linear-gradient(to right, #da26a9, #b100e3);
-}
 
 .button--icon{
     i{
@@ -221,6 +214,27 @@
 .button--small{
     font-size: 16px;
     padding: 10px 20px;
+}
+
+.button--instagram{
+    @include linear-gradient(to right, #da26a9, #b100e3);
+}
+
+.button--rock-panels{
+    background-color: $color-Blue600;
+}
+.button--3d-panels{
+    background-color: $color-Teal500;
+}
+.button--il-tiles{
+    background-color: $color-Teal700;
+}
+.button--monarostone{
+    background-color: $color-LightGreen700;
+}
+
+.button--gray{
+    background-color: rgba(#b2dfdb,0.5);
 }
 
 .button--red{

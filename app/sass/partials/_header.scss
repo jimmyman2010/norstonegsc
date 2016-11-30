@@ -171,7 +171,24 @@
                         padding: 10px;
                     }
                     @include desktop{
-                        color: #232323;
+                        color: $color-Grey900;
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 0%;
+                            height: 1px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $color-Grey900;
+
+                            @include transition(width 0.2s);
+                        }
+                        &:hover {
+                            &:after{
+                                width: 100%;
+                            }
+                        }
                     }
                     &:before{
                         content: '';
@@ -185,6 +202,7 @@
                         @include transition(transform 0.2s, top 0.2s);
 
                         background: url(../images/stone.png) no-repeat center top;
+                        background-size: 116px auto;
                         @include desktop{
                             @include transform(scale(0.9));
                         }
@@ -197,141 +215,55 @@
                         display: block;
                     }
                 }
-
-                &:hover {
-                    .sub-menu {
-                        display: block;
-                    }
-                }
-                .sub-menu{
-                    position: absolute;
-                    left: 0;
-                    top: 100%;
-
-                    font-size: 15px;
-                    display: none;
-                    background-color: white;
-                    @include box-shadow(0 6px 13px -5px rgba(0, 0, 0, 0.5));
-                    z-index: 1000;
-                    width: 250px;
-                    @include tablet{
-                        padding-top: 25px;
-                    }
-
-                    li{
-                        border-top: 1px solid #f7f7f7;
-                        &:first-child{
-                            border-top: none;
-                        }
-                        &:hover, &:hover + li{
-                            border-top-color: transparent;
-                        }
-                    }
-                    a{
-                        display: block;
-                        padding: 12px 16px;
-                        color: black;
-                        @include desktop {
-                            padding: 17px 20px;
-                            &:hover {
-                                background-color: #e7f5f5;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-                .sub-menu--blue-chill a{
-                    color: $color-blue-chill;
-                }
-                .sub-menu--green a{
-                    color: $color-green;
-                }
-                .sub-menu--orange a{
-                    color: $color-orange;
-                }
-            }
-            .menu-item-has-children{
-                > a{
-                    padding-right: 20px;
-                    &:after{
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-                        margin-top: -3px;
-
-                        width: 0;
-                        height: 0;
-                        border-left: 6px solid transparent;
-                        border-right: 6px solid transparent;
-
-                        border-top: 6px solid #263238;
-                    }
-                }
             }
 
             .menu--rock-panels > a {
                 &:before {
-                    background-position: center -350px;
+                    background-position: center -35px;
                 }
                 @include desktop {
                     &:before {
                         background-position: center 0;
                     }
-                    &:hover:before {
-                        background-position: center -35px;
-                    }
                 }
             }
             .menu--basalt-3d-panels > a {
                 &:before {
-                    background-position: center -385px;
+                    background-position: center -105px;
                 }
                 @include desktop {
                     &:before {
                         background-position: center -70px;
                     }
-                    &:hover:before {
-                        background-position: center -105px;
-                    }
                 }
             }
             .menu--basalt-il-tiles > a {
                 &:before {
-                    background-position: center -420px;
+                    background-position: center -175px;
                 }
                 @include desktop {
                     &:before {
                         background-position: center -140px;
                     }
-                    &:hover:before {
-                        background-position: center -175px;
-                    }
                 }
             }
             .menu--monarostone > a {
                 &:before {
-                    background-position: center -455px;
+                    background-position: center -245px;
                 }
                 @include desktop {
                     &:before {
                         background-position: center -210px;
                     }
-                    &:hover:before {
-                        background-position: center -245px;
-                    }
                 }
             }
             .menu--corners > a {
                 &:before {
-                    background-position: center -490px;
+                    background-position: center -315px;
                 }
                 @include desktop {
                     &:before {
                         background-position: center -280px;
-                    }
-                    &:hover:before {
-                        background-position: center -315px;
                     }
                 }
             }
@@ -392,7 +324,7 @@
                 display: block;
                 height: 3px;
                 @include border-radius(1px);
-                background-color: #263238;
+                background-color: $color-Grey900;
                 margin-top: 4px;
                 &:first-child{
                     margin-top: 0;
@@ -410,11 +342,14 @@
             padding-top: 18px;
             .site-menu .main-menu {
                 > .menu-item {
-                    padding-top: 20px;
+                    padding-top: 15px;
                     padding-bottom: 0;
-                    > a:before {
-                        top: -28px;
-                        @include transform(scale(0.8));
+                    > a {
+                        padding-bottom: 5px;
+                        &:before {
+                            top: -28px;
+                            @include transform(scale(0.8));
+                        }
                     }
                 }
             }

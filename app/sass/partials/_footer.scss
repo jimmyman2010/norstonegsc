@@ -1,7 +1,7 @@
 .site-footer{
 
     .personal-network{
-        background-color: #263238;
+        background-color: $color-Grey900;
         color: #fff;
         font-size: 18px;
         a{
@@ -21,8 +21,10 @@
 
         h3{
             font-family: $font-raleway;
-            font-size: 23px;
+            font-weight: normal;
+            font-size: 25px;
             margin: 0 0 15px;
+            color: $color-Teal700;
         }
         .menu{
             list-style: disc;
@@ -56,7 +58,7 @@
     }
 
     .information{
-        font-size: 15px;
+        font-size: 18px;
         .contact-info{
             padding: 15px;
             @include tablet{
@@ -70,14 +72,18 @@
         }
         h3{
             font-family: $font-raleway;
-            font-size: 23px;
+            font-weight: normal;
+            font-size: 25px;
             margin: 0 0 20px;
+            color: $color-Teal700;
         }
         p{
             margin: 0 0 10px;
         }
-        .phone a{
-            color: #263238;
+        strong, a{
+            font-family: $font-raleway;
+            font-weight: normal;
+            color: $color-Teal700;
         }
         .networks {
             margin-bottom: 20px;
@@ -85,7 +91,7 @@
                 font-size: 24px;
                 display: inline-block;
                 margin-left: 30px;
-                color: #059816;
+                color: $color-Teal700;
                 &:first-child {
                     margin-left: 0;
                 }

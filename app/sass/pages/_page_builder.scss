@@ -142,6 +142,160 @@
         }
     }
 
+    .cell--default{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Teal700;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Teal700;
+            }
+        }
+    }
+    .cell--rock-panels{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Blue600;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Blue600;
+            }
+        }
+    }
+    .cell--3d-panels{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Teal500;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Teal500;
+            }
+        }
+    }
+    .cell--il-tiles{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Teal700;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Teal700;
+            }
+        }
+    }
+    .cell--monarostone{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-LightGreen700;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-LightGreen700;
+            }
+        }
+
+    }
+
+
+
     .cell--blue{
         background-color: $color-blue;
         .widget-title{
