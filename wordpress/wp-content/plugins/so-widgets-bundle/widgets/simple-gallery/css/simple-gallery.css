@@ -52,6 +52,13 @@
 
 
 @media all and (min-width: 520px) {
+  .sow-simple-gallery-wrapper {
+    padding-bottom: 10px;
+  }
+  .layout--full{
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
   .sow-simple-gallery-wrapper .sow-simple-gallery-image {
     float: left;
     width: 50%;
@@ -75,6 +82,13 @@
 }
 
 @media all and (min-width: 1024px) {
+  .sow-simple-gallery-wrapper {
+    padding-bottom: 20px;
+  }
+  .layout--full{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
   .sow-simple-gallery-wrapper .sow-simple-gallery-image {
     width: 25%;
     padding: 20px;

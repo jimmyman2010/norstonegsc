@@ -85,6 +85,15 @@ class SiteOrigin_Widgets_SimpleGallery_Widget extends SiteOrigin_Widget {
 						'label' => __('Image size', 'so-widgets-bundle'),
 						'type' => 'image-size',
 						'default' => 'full',
+					),
+					'layout' => array(
+						'label' => __('Layout', 'so-widgets-bundle'),
+						'type' => 'select',
+						'default' => 'default',
+						'options' => array(
+							'default' => __('Default', 'so-widgets-bundle'),
+							'full' => __('Full', 'so-widgets-bundle')
+						)
 					)
 				)
 			)

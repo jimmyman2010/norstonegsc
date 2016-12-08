@@ -1,5 +1,5 @@
 <?php if( !empty($instance['images']) ) : ?>
-	<div class="sow-simple-gallery-wrapper">
+	<div class="sow-simple-gallery-wrapper clearfix <?= 'layout--' . $instance['display']['layout'] ?>">
 		<?php
 		foreach( $instance['images'] as $image ) {
 			echo '<div class="sow-simple-gallery-image">';

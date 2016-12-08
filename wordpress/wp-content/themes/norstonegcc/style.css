@@ -9,3 +9,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Norstone GCC, Stone
 Text Domain: norstone
 */
+#ssttbutton{
+    bottom: 40px !important;
+}
+.fa-stack-1x{
+    font-size: inherit !important;
+}
+.fa-stack-2x{
+    font-size: 2em !important;
+}
