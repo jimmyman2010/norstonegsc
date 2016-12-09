@@ -494,6 +494,20 @@
 
     .cell--form{
 
+        @include desktop {
+            background: url(../images/bubble.png) no-repeat left 20px;
+            background-size: 90% auto;
+        }
+
+        p{
+            br{
+                display: none;
+                @include desktop{
+                    display: inline-block;
+                }
+            }
+        }
+
         .widget-title{
             font-family: $font-raleway;
             font-size: 42px;
