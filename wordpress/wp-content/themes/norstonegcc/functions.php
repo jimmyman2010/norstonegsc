@@ -73,9 +73,7 @@ function dickinsons_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 200, 140 );
 
-	add_image_size('thumb_footer', 90, 90, true);
-	add_image_size('thumb_menu', 130, 130, true);
-	add_image_size('banner', 1200, 350, true);
+	add_image_size('thumb_gallery', 600, 400, true);
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
@@ -320,7 +318,7 @@ require get_template_directory() . '/inc/remove-meta.php';
 require get_template_directory() . '/inc/recent-post.php';
 require get_template_directory() . '/inc/post-quotes.php';
 //require get_template_directory() . '/inc/post-history.php';
-require get_template_directory() . '/inc/admin-settings.php';
+//require get_template_directory() . '/inc/admin-settings.php';
 require get_template_directory() . '/inc/random-widget.php';
 require get_template_directory() . '/inc/featured-video-widget.php';
 //require get_template_directory() . '/inc/history-widget.php';

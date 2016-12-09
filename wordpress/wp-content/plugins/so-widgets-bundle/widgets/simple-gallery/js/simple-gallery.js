@@ -3,8 +3,8 @@ jQuery( function($){
     $('.sow-simple-gallery-wrapper').each( function(){
         var wrapper = $(this);
 
-        wrapper.find('img').each(function(){
-            $(this).parent().attr('href', this.src);
+        wrapper.find('span img').each(function(){
+            $(this).parents('.figure').attr('href', this.src);
         });
 
         wrapper.magnificPopup({
