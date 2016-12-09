@@ -18,7 +18,7 @@
 
 			<div class="copyright">
 				<div class="container clearfix">
-					<a href="#body" class="back-to-top anchor">Go To Top <i class="fa fa-angle-up"></i></a>
+<!--					<a href="#body" class="back-to-top anchor">Go To Top <i class="fa fa-angle-up"></i></a>-->
 					<p>&copy; 2016 Norstone. All Rights Reserved.</p>
 				</div>
 			</div>
@@ -28,10 +28,12 @@
 
 </div>
 
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "f5aa822b-dd9d-40c5-ab1d-949e4ccb9e9c", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-
 <?php wp_footer(); ?>
+
+<script src="https://cdn.smooch.io/smooch.min.js"></script>
+<script>
+	Smooch.init({ appToken: '4dv7ksrwi1x6nvhz1d1i7jzou' });
+</script>
+
 </body>
 </html>
