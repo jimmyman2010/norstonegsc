@@ -293,6 +293,68 @@
         }
 
     }
+    .cell--sculptured-tiles{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Green600;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Green600;
+            }
+        }
+
+    }
+    .cell--chiselled-tiles{
+        position: relative;
+        padding: 0 !important;
+        &:before{
+            content: '';
+            display: block;
+
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 100%;
+            height: 10px;
+            background-color: $color-Green700;
+        }
+
+        .widget-title{
+            padding-top: 20px;
+        }
+        .textwidget {
+            font-family: $font-light;
+            a{
+                color: $color-Grey900;
+                text-decoration: none;
+            }
+            .button{
+                margin-top: 15px;
+                background-color: $color-Green700;
+            }
+        }
+
+    }
 
 
 

@@ -232,8 +232,15 @@
 .button--monarostone{
     background-color: $color-LightGreen700;
 }
+.button--sculptured-tiles{
+    background-color: $color-Green600;
+}
+.button--chiselled-tiles{
+    background-color: $color-Green700;
+}
 
 .button--gray{
+    color: $color-Teal !important;
     background-color: rgba(#b2dfdb,0.5);
 }
 
