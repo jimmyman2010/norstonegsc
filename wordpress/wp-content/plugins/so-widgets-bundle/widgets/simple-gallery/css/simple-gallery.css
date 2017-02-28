@@ -1,0 +1,102 @@
+.sow-simple-gallery-wrapper {
+  text-align: center;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image {
+  padding: 8px 0;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image a{
+  display: block;
+  position: relative;
+  outline: none;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image a:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image a:hover:before{
+  opacity: 1;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image a:after{
+  content: "\f055";
+  display: inline-block;
+  font: normal normal normal 28px/1 FontAwesome;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 0 0 -12px;
+
+  color: #CD5C5C;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, margin 0.3s;
+  -moz-transition: opacity 0.2s, margin 0.3s;
+  -o-transition: opacity 0.2s, margin 0.3s;
+  transition: opacity 0.2s, margin 0.3s;
+}
+.sow-simple-gallery-wrapper .sow-simple-gallery-image a:hover:after{
+  opacity: 1;
+  margin-top: -12px;
+}
+
+
+@media all and (min-width: 520px) {
+  .sow-simple-gallery-wrapper {
+    padding-bottom: 10px;
+  }
+  .layout--full{
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image:nth-child(2n+1){
+    clear: left;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image {
+    width: 33.33%;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image:nth-child(2n+1){
+    clear: none;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image:nth-child(3n+1){
+    clear: left;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .sow-simple-gallery-wrapper {
+    padding-bottom: 20px;
+  }
+  .layout--full{
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image {
+    width: 25%;
+    padding: 20px;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image:nth-child(3n+1){
+    clear: none;
+  }
+  .sow-simple-gallery-wrapper .sow-simple-gallery-image:nth-child(4n+1){
+    clear: left;
+  }
+}
