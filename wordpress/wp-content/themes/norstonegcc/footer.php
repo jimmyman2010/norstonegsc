@@ -27,7 +27,7 @@
 	</div>
 
 </div>
-
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 <?php wp_footer(); ?>
 
 <script src="https://cdn.smooch.io/smooch.min.js"></script>

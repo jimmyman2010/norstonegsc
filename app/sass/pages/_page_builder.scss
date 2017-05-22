@@ -143,217 +143,26 @@
     }
 
     .cell--default{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Teal700;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Teal700;
-            }
-        }
+        @include cell_brick($color-Teal700, $color-Grey900);
     }
     .cell--rock-panels{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Blue600;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Blue600;
-            }
-        }
+        @include cell_brick($color-Blue600, $color-Grey900);
     }
     .cell--3d-panels{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Teal500;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Teal500;
-            }
-        }
+        @include cell_brick($color-Teal500, $color-Grey900);
     }
     .cell--il-tiles{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Teal700;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Teal700;
-            }
-        }
+        @include cell_brick($color-Teal700, $color-Grey900);
     }
     .cell--monarostone{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-LightGreen700;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-LightGreen700;
-            }
-        }
-
+        @include cell_brick($color-LightGreen700, $color-Grey900);
     }
     .cell--sculptured-tiles{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Green600;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Green600;
-            }
-        }
-
+        @include cell_brick($color-Green600, $color-Grey900);
     }
+
     .cell--chiselled-tiles{
-        position: relative;
-        padding: 0 !important;
-        &:before{
-            content: '';
-            display: block;
-
-            position: absolute;
-            left: 0;
-            top: -20px;
-            width: 100%;
-            height: 10px;
-            background-color: $color-Green700;
-        }
-
-        .widget-title{
-            padding-top: 20px;
-        }
-        .textwidget {
-            font-family: $font-light;
-            a{
-                color: $color-Grey900;
-                text-decoration: none;
-            }
-            .button{
-                margin-top: 15px;
-                background-color: $color-Green700;
-            }
-        }
-
+        @include cell_brick($color-Green700, $color-Grey900);
     }
 
 
@@ -443,6 +252,34 @@
             }
         }
     }
+
+
+
+
+
+
+    .cell--il-rp{
+        @include cell_brick($color-il-rp, $color-Grey900);
+    }
+    .cell--aksent{
+        @include cell_brick($color-aksent, $color-Grey900);
+    }
+    .cell--lynia{
+        @include cell_brick($color-lynia, $color-Grey900);
+    }
+    .cell--monarostone{
+        @include cell_brick($color-monarostone, $color-Grey900);
+    }
+    .cell--rustik{
+        @include cell_brick($color-rustik, $color-Grey900);
+    }
+    .cell--planc{
+        @include cell_brick($color-planc, $color-Grey900);
+    }
+    .cell--ashlr{
+        @include cell_brick($color-ashlr, $color-Grey900);
+    }
+
 
     .text--white{
         .textwidget {
@@ -802,7 +639,7 @@
             font-family: $font-raleway-light !important;
         }
         p{
-            margin: 0 auto 15px;
+            margin: 0 auto 15px !important;
             max-width: 666px;
         }
     }
@@ -1104,4 +941,8 @@
     .panel-grid-cell{
         margin-bottom: 0;
     }
+}
+
+.no-padding{
+    padding: 0 !important;
 }

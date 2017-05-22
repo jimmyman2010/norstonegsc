@@ -31,7 +31,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
-define('VERSION', '1.0.2.8');
+define('VERSION', '1.0.2.9');
 
 if ( ! function_exists( 'dickinsons_setup' ) ) :
 /**
@@ -156,8 +156,8 @@ add_action( 'wp_head', 'dickinsons_javascript_detection', 0 );
  */
 function dickinsons_scripts() {
 	// Add css, used in the main stylesheet.
-	wp_enqueue_style( 'dickinsons-vendor', get_template_directory_uri() . '/assets/css/vendor.min.css', array(), VERSION );
-	wp_enqueue_style( 'dickinsons-global', get_template_directory_uri() . '/assets/css/global.min.css', array(), VERSION );
+//	wp_enqueue_style( 'dickinsons-vendor', get_template_directory_uri() . '/assets/css/vendor.min.css', array(), VERSION );
+//	wp_enqueue_style( 'dickinsons-global', get_template_directory_uri() . '/assets/css/global.min.css', array(), VERSION );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'dickinsons-style', get_stylesheet_uri(), array(), VERSION );
