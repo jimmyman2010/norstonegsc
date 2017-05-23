@@ -281,6 +281,29 @@
                     }
                 }
             }
+            @include desktop {
+                .menu--il-rp a:after {
+                    background-color: $color-il-rp;
+                }
+                .menu--aksent a:after {
+                    background-color: $color-aksent;
+                }
+                .menu--lynia a:after {
+                    background-color: $color-lynia;
+                }
+                .menu--monarostone a:after {
+                    background-color: $color-monarostone;
+                }
+                .menu--rustik a:after {
+                    background-color: $color-rustik;
+                }
+                .menu--planc a:after {
+                    background-color: $color-planc;
+                }
+                .menu--ashlr a:after {
+                    background-color: $color-ashlr;
+                }
+            }
         }
 
     }
