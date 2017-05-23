@@ -245,7 +245,12 @@
 
     ul{
         list-style-type: disc;
-        padding-left: 20px;
+        padding-left: 25px;
+    }
+
+    ol{
+        list-style-type: decimal;
+        padding-left: 25px;
     }
     li{
         position: relative;
