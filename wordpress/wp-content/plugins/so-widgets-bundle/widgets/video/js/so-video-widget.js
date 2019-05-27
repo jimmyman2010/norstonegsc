@@ -4,7 +4,9 @@ var sowb = window.sowb || {};
 jQuery( function ( $ ) {
 	sowb.setupVideoPlayers = function() {
 		var $ = jQuery;
-		$('video.sow-video-widget').mediaelementplayer();
+		if($.fn.mediaelementplayer) {
+      $('video.sow-video-widget').mediaelementplayer();
+    }
 	};
 	sowb.setupVideoPlayers();
 
